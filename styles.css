@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #66fcf1;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.animated-text {
+    font-size: x-large;
+    color: #fff;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Required for animation positioning */
+    transition: color 0.3s ease-in-out; /* Transition for color change */
+}
+
+.animated-text:after {
+    content: ""; /* Add pseudo-element for underline */
+    position: absolute;
+    width: 100%; /* Match text width */
+    height: 2px; /* Underline thickness */
+    bottom: -2px; /* Position underline below the text */
+    left: 0; /* Align underline with text */
+    background-color: transparent; /* Initial underline color (transparent) */
+    /*transition: all 0.3s ease-in-out;  Transition for hover animation */
+}
+
+.animated-text:hover:after {
+    background-color: var(--primary-color); 
+    animation: underline-animation 0.3s ease-in-out forwards; /* Trigger animation on hover */
+}
+
+.animated-text:hover {
+    color: var(--primary-color); /* Change text color on hover */
+}
+
+@keyframes underline-animation {
+    from { width: 0; } /* Underline starts from 0 width */
+    to { width: 100%; } /* Underline animates to full width */
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.button {
+    background-color: transparent; /* Initial background (transparent) */
+    color: var(--primary-color); /* Initial text color (primary) */
+    border: 2px solid var(--primary-color); /* Solid border (primary) */
+    padding: 15px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Transition for hover effects */
+  }
+  
+  .button:hover {
+    background-color: var(--primary-color); /* Background becomes primary on hover */
+    color: black; /* Text becomes black on hover */
+  }
