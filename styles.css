@@ -89,3 +89,122 @@ nav a {
     background-color: var(--primary-color); /* Background becomes primary on hover */
     color: black; /* Text becomes black on hover */
   }
+
+
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 100px;
+    background-color: #000;
+     /* min-height: 100vh; */
+}
+
+.hero .content {
+    max-width: 50%;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+
+
+.hero .main-heading {
+    margin-top: 0;
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex; /* Arrange buttons horizontally */
+    gap: 20px;
+    align-items: center;
+    
+  }
+  
+  .explore-btn {
+    background-color: var(--primary-color); /* Always primary color */
+    color: black; /* Always black text */
+    border: 2px solid var(--primary-color);
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer; /* Indicate clickable button */
+  }
+  .explore-btn:hover {
+    background-color: coral;
+    border: 2px solid coral;
+  }
+
+/* Play Button Styles */
+.play-button {
+    width: 50px;       /* Reduced size */
+    height: 50px;      /* Reduced size */
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12.5px solid black;  /* Reduced size */
+    border-top: 7.5px solid transparent; /* Reduced size */
+    border-bottom: 7.5px solid transparent; /* Reduced size */
+    position: absolute;
+    left: 20px;       /* Adjusted position */
+}
+
+
+
+.hero-image {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.hero-image img {
+    max-height: 600px;
+    width: 100%; /* Ensuring the image scales properly */
+    object-fit: cover; /* Ensuring the image maintains aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+/* General CSS Rules for Animations */
+[data-animate] {
+    transition: all 1s ease-out;
+}
+
+[data-animate].animated {
+    opacity: 1;
+    transform: translate(0);
+}
+
+[data-animate="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-animate].animated {
+    opacity: 1;
+    transform: translateY(0);
+}
