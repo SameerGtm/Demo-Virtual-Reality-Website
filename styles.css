@@ -274,6 +274,84 @@ nav a {
 
 
 
+.new-dimention {
+    color: white;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.new-dimention-sub {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.new-dimention h1 {
+    color:#fff;
+    font-size: 3.5em;
+}
+
+.new-dimention-sub p {
+    font-size: 1.2em;
+}
+
+.new-dimention-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+
+/* New class for specific images */
+.vr-image-container {
+    width: 270px; /* Container width */
+    height: 270px; /* Container height */
+    border-radius: 3%;
+    overflow: hidden; /* Hide overflow to ensure image stays within container */
+    position: relative; /* Position relative for inner absolute positioning */
+    margin: 0 10px; /* Add spacing between containers */
+    display: inline-block; /* Ensure containers are displayed inline */
+  }
+  
+  .vr-image {
+    width: 100%; /* Image takes up full width of the container */
+    height: 100%; /* Image takes up full height of the container */
+    object-fit: cover; /* Maintain aspect ratio and fit within container */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: absolute; /* Position absolute to allow for scaling */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+  }
+  
+  .vr-image-container:hover .vr-image {
+    transform: scale(1.05); /* Zoom effect on hover */
+    opacity: 0.8; /* Slight decrease in opacity on hover */
+  }
+
+.new-dimention-features {
+    display: flex;
+    justify-content: space-between;
+}
+.new-dimention-features h2 {
+    font-size: 2.5em;
+    color: var(--primary-color)
+}
+
+.new-dimention-image {
+    margin-left: 5px;
+    margin-right: 100px;
+}
+
+.new-dimention-image img {
+    width: 100%; /* Ensuring the image scales properly */
+    object-fit: cover; /* Ensuring the image maintains aspect ratio */
+}
+
+
 
 
 
