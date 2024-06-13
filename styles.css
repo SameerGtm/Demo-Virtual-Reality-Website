@@ -565,6 +565,140 @@ nav a {
 
 
 
+  /* News section specific styles */
+.news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-container .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.news-container .section-header h2 {
+    font-size: 3em;
+    color: white;
+}
+
+.news-container .view-all-news {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color); 
+    color: var(--primary-color); 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.news-container .view-all-news:hover {
+    background-color: var(--primary-color); 
+    color: #111;
+}
+
+/* Bordered container for news articles */
+.bordered-container {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.news-content {
+    display: flex;
+    gap: 10px;
+}
+
+.main-article {
+    position: relative;
+    flex: 2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-article-image {
+    position: relative;
+}
+
+.main-article-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.main-article-img:hover {
+    transform: scale(1.1);
+}
+
+.article-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.article-date {
+    font-size: 14px;
+}
+
+.main-article h3 {
+    font-size: 2em;
+}
+
+
+.side-articles {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-article {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.side-article-image {
+    position: relative;
+}
+
+.side-article-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-article-img:hover {
+    transform: scale(1.1);
+}
+
+.side-article-text {
+    color: white;
+}
+
+.side-article-text h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.side-article-text .article-date {
+    font-size: 12px;
+    color: #999;
+}
+
+
+
 
 
 
