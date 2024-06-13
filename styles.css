@@ -703,6 +703,108 @@ nav a {
 
 
 
+/* for pricing section */
+.pricing-table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-table h2 {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.pricing-table h1 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pricing-plan {
+    background-color: #222;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.pricing-plan h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.pricing-plan h3 span {
+    font-size: 16px;
+    color: #ff6600;
+}
+
+.pricing-plan h4 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pricing-plan p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-plan ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.pricing-plan button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pricing-plan.highlighted button {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+.pricing-plan.highlighted button:hover {
+    background-color: orange;
+    color: #000;
+}
+
+.pricing-plan:not(.highlighted) button {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.pricing-plan:not(.highlighted) button:hover {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+.pricing-plan.highlighted {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
 /* General CSS Rules for Animations */
 [data-animate] {
     transition: all 1s ease-out;
