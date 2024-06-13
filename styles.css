@@ -801,6 +801,31 @@ nav a {
 
 
 
+/* styles for logo section */
+.logo-section {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+
+
 
 
 
