@@ -828,6 +828,146 @@ nav a {
 
 
 
+/* Footer Styles */
+
+
+
+.footer-section {
+    padding: 50px 100px;
+    background-color: #000;
+    color: #fff;
+    border-top:  1px solid #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 1.7em;
+    color: var(--primary-color)
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.footer-column ul li {
+    font-size: 1.3em;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer-follow,
+.footer-newsletter,
+.footer-payment {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-follow h3,
+.footer-newsletter h3,
+.footer-payment h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.social-icons,
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 30px; 
+    height: 30px; 
+    transition: background-color 0.3s;
+}
+.pay-icon {
+    width: 80px; 
+    height: 80px; 
+    transition: background-color 0.3s;
+}
+
+.footer-newsletter .newsletter-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 100px;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.footer-newsletter input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-newsletter button:hover {
+    background-color: orange;
+}
+
+
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
 
 
 /* General CSS Rules for Animations */
