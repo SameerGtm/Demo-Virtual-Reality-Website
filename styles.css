@@ -459,6 +459,113 @@ nav a {
 
 
 
+/* for testimonial section */
+
+.testimonial-container {
+
+    margin: 0 auto;
+}
+
+.testimonial-container .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.testimonial-container .section-header h2 {
+    font-size: 3em;
+    color: white;
+}
+
+.testimonial-container .give-feedback {
+    display: inline-block;
+    padding: 20px 30px;
+    border: 1px solid var(--primary-color); 
+    color: var(--primary-color); 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.testimonial-container .give-feedback:hover {
+    background-color: var(--primary-color); 
+    color: #111;
+}
+
+.testimonial-container .testimonial {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+}
+
+.testimonial-container .testimonial-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    
+}
+
+.testimonial-container .personal-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-container .testimonial-img {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial-container .testimonial-text {
+   margin-left: 10px;
+   max-width: 800px;
+}
+
+.testimonial-container  h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+}
+.testimonial-container .position {
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.testimonial-container .testimonial-text .position {
+    font-size: 16px;
+    color: var(--primary-color); /* Update to your primary color */
+    margin-bottom: 20px;
+}
+
+.testimonial-container .testimonial-quote {
+    font-size: 1.4em;
+    color: white;
+}
+
+.testimonial-container .testimonial-rating span {
+    color: #ffcc00; /* Star color */
+    font-size: 1.5em;
+}
+
+.testimonial-container .vertical-line {
+    width: 1px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    border: 1px solid #333; /* Set border style, color, and thickness */
+    margin: 0 100px; /* Add optional margin for spacing */
+  }
+
+
+
+
+
+
 
 
 
